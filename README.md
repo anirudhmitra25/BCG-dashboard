@@ -4,7 +4,7 @@
 
 BCG Dashboard is a dynamic dashboard application built using React.js, Framer Motion, React Icons, Leaflet, and ApexCharts. It provides users with a comprehensive visualization of data with interactive charts, maps, and widgets.
 
-[Check out the live demo here!](https://example.com)
+[Check out the live demo here!](https://bcg-dashboard.vercel.app/)
 
 ## Tech Stack
 
