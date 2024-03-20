@@ -217,7 +217,7 @@ export default function LandingPage() {
         Hello User,
       </h1>
 
-      <div className="flex bg-transparent overflow-auto h-full w-full mt-20">
+      <div className="flex overflow-auto h-full w-full mt-20">
         {dummyData.cities.map((item, key) => (
           <Widget key={key} name={item.name} />
         ))}

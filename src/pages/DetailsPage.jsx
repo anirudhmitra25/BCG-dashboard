@@ -91,13 +91,7 @@ const MainSection = ({ selectedData, setIsOpen, isOpen }) => {
       },
     },
     stroke: {
-      // width: [5, 7, 5], // Adjust the stroke width as needed
       curve: "straight",
-      // dashArray: [
-      //   [0, 8, 5],
-      //   [0, 8, 5],
-      //   [0, 8, 5],
-      // ],
     },
     legend: {
       show: false,
@@ -194,7 +188,7 @@ const MainSection = ({ selectedData, setIsOpen, isOpen }) => {
   return (
     <div className="flex flex-col bg-black">
       <div className="flex bg-blue-gray-900 px-2 py-4 items-center">
-        <div className="">
+        <div className="transition-transform transform hover:scale-125">
           {isOpen ? (
             <MdKeyboardArrowLeft
               onClick={toggleSidebar}
@@ -239,7 +233,7 @@ const MainSection = ({ selectedData, setIsOpen, isOpen }) => {
         </span>
         <Switch
           id="include"
-          className="border-gray-400 border-2 bg-transparent"
+          className="border-gray-400 border-2 bg-transparent opacity-70"
         />
         <label htmlFor="include" className="text-white text-xs ml-2">
           INCLUDE
@@ -257,7 +251,7 @@ const MainSection = ({ selectedData, setIsOpen, isOpen }) => {
               <Switch
                 checked={toggleState.aiForecast}
                 onChange={() => handleToggle("aiForecast")}
-                className="border-gray-400 border-2 bg-transparent"
+                className="border-gray-400 border-2 bg-transparent opacity-70"
               />
               <div
                 style={{
@@ -273,7 +267,7 @@ const MainSection = ({ selectedData, setIsOpen, isOpen }) => {
               <Switch
                 checked={toggleState.finalForecast}
                 onChange={() => handleToggle("finalForecast")}
-                className="border-gray-400 border-2 bg-transparent"
+                className="border-gray-400 border-2 bg-transparent opacity-70"
               />
               <div
                 style={{

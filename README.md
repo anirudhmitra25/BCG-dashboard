@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# BCG Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+BCG Dashboard is a dynamic dashboard application built using React.js, Framer Motion, React Icons, Leaflet, and ApexCharts. It provides users with a comprehensive visualization of data with interactive charts, maps, and widgets.
 
-In the project directory, you can run:
+[Check out the live demo here!](https://example.com)
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js: A JavaScript library for building user interfaces.
+- Framer Motion: A motion library for React to create smooth animations and transitions.
+- React Icons: A library of popular icon packs for React projects.
+- Leaflet: An open-source JavaScript library for interactive maps.
+- ApexCharts: A modern charting library that helps developers create interactive visualizations for web applications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Start the React Application
 
-### `npm test`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anirudhmitra25/BCG-dashboard.git
+   ```
+2. Navigate to project directory:
+   ```bash
+   cd BCG-dashboard
+   ```
+3. Install dependencies using npm or yarn:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm start
+   ```
+5. Open your browser and visit http://localhost:3000 to view BCG dashboard.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
+The project structure follows a typical React application layout. Key folders and files include:
 
-### `npm run build`
+- **src/components**: Contains reusable React components.
+- **src/pages**: Contains the main pages of the application.
+- **public**: Holds the public assets and the HTML file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to explore the app. If you have any questions or suggestions, please reach out!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Note**: Ensure you have Node.js and npm (or yarn) installed on your machine before running the application locally. If not, you can download them from [https://nodejs.org/](https://nodejs.org/).

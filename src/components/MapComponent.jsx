@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "leaflet/dist/leaflet.css";
 import icon from "leaflet/dist/images/marker-icon.png";
 import L from "leaflet";
-import './styles/stylesheet.css'
+import "./styles/stylesheet.css";
 import Percentage from "./Percentage";
 
 let DefaultIcon = L.icon({
@@ -44,6 +44,11 @@ export default function MapComponent() {
       center={[51.505, -0.09]}
       zoom={4}
       scrollWheelZoom={true}
+      maxBounds={[
+        [85, -180],
+        [-85, 180],
+      ]}
+      maxBoundsViscosity={2}
       minZoom={3}
       maxZoom={6}
       zoomControl={false}
