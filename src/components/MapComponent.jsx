@@ -75,6 +75,7 @@ export default function MapComponent() {
             <Tooltip>
               <div className="p-3">
                 <h1 className="text-lg pb-2">{item.name}</h1>
+                <div className=" border-b-2 border-blue-gray-200 mb-3" />
                 <div className="flex pb-2 items-center justify-between">
                   <span className="mr-2 font-semibold text-lg">
                     AI Forecast:{" "}

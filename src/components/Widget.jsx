@@ -93,7 +93,7 @@ const Widget = ({ name, forecasts }) => {
   return (
     <motion.div
       ref={widgetRef}
-      className="rounded-lg p-4 mb-4 shadow-lg mx-4 w-1/6 min-w-64 max-h-64"
+      className="rounded-lg p-4 mb-4 shadow-md shadow-blue-gray-700 mx-4 w-1/6 min-w-64 max-h-64"
       style={{
         zIndex: 1000,
         backgroundColor: "rgba(31, 41, 55, 0.3)",
@@ -107,7 +107,7 @@ const Widget = ({ name, forecasts }) => {
       }}
     >
       <div className="flex justify-end">
-        <IoReorderTwoSharp className="text-white" />
+        <IoReorderTwoSharp className="text-white transition duration-300 ease-in-out transform hover:scale-125" />
       </div>
       <Link to={`/details/${name}`} className="no-underline">
         <h2 className="text-lg text-white font-semibold mb-2">{name}</h2>
