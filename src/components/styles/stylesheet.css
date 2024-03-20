@@ -1,0 +1,25 @@
+.leaflet-tooltip-left {
+  background-color: transparent;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border: none;
+}
+
+.leaflet-tooltip-left.leaflet-tooltip-visible {
+  opacity: 1;
+  border: none;
+}
+
+.leaflet-tooltip-right {
+  background-color: transparent;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border: none;
+}
+
+.leaflet-tooltip-right.leaflet-tooltip-visible {
+  opacity: 1;
+  border: none;
+}
