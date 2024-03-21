@@ -52,6 +52,7 @@ export default function MapComponent() {
       minZoom={3}
       maxZoom={6}
       zoomControl={false}
+      attributionControl={false}
       whenReady={(mapInstance) => {
         const leafletMap = mapInstance.target;
         leafletMap.flyTo([51.505, -0.09], 5, {
