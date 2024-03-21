@@ -13,29 +13,32 @@ export default function TabsComponent() {
     {
       label: "Backlog",
       value: "backlog",
+      numVal: "10",
       desc: <></>,
     },
     {
       label: "Pending",
       value: "pending",
+      numVal: "34",
       desc: <></>,
     },
     {
       label: "Final Sign Off",
       value: "finalSignOff",
+      numVal: "0",
       desc: <></>,
     },
   ];
   return (
     <Tabs value={activeTab}>
       <TabsHeader
-        className="rounded-none bg-transparent px-3"
+        className="rounded-none bg-transparent px-2"
         indicatorProps={{
           className:
             "bg-transparent border-b-2 border-teal-300 shadow-none rounded-none",
         }}
       >
-        {data.map(({ label, value }) => (
+        {data.map(({ label, value, numVal }) => (
           <Tab
             key={value}
             value={value}
@@ -47,6 +50,9 @@ export default function TabsComponent() {
             }
           >
             {label}
+            <span className="text-gray-700 text-xs font-semibold pl-2">
+              {numVal}
+            </span>
           </Tab>
         ))}
       </TabsHeader>
