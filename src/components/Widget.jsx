@@ -117,7 +117,7 @@ const Widget = ({ name, forecasts }) => {
             {"45.7"}
           </span>
           <Chart
-            className="w-3/4 h-full"
+            className="w-3/4 h-full max-w-52"
             options={state.options}
             series={state.series}
             type="line"
@@ -125,12 +125,12 @@ const Widget = ({ name, forecasts }) => {
           <FaLongArrowAltUp className="min-h-6 text-green-700" />
         </div>
         <p className="text-sm font-semibold text-white">forecast:</p>
-        <div className="placeholder-div w-full h-20 flex items-center justify-between min-h-20">
+        <div className="placeholder-div w-full h-20 flex items-center justify-between min-h-20 overflow-hidden">
           <span className="rounded text-white text-lg font-semibold">
             {"45.7"}
           </span>
           <Chart
-            className="w-3/4 h-full"
+            className="w-3/4 h-full max-w-52"
             options={state.options}
             series={state.series}
             type="line"

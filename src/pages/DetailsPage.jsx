@@ -83,12 +83,25 @@ const MainSection = ({ selectedData, setIsOpen, isOpen }) => {
   };
 
   const chartOptions = {
+    annotations: {
+      xaxis: [
+        {
+          x: "Q2 2024",
+          x2: "Q3 2024",
+          borderColor: "#7CB9E8",
+          borderWidth: 5,
+          opacity: 0.4,
+        },
+      ],
+    },
     chart: {
       type: "line",
       height: height,
       toolbar: {
         show: false,
       },
+      redrawOnWindowResize: true,
+      redrawOnParentResize: true,
     },
     stroke: {
       curve: "straight",
@@ -331,7 +344,7 @@ const Sidebar = ({ width, height, selectedCard, handleCardClick, isOpen }) => {
     <>
       <div
         style={{ width }}
-        className="relative bg-blue-gray-900 overflow-auto"
+        className="relative bg-blue-gray-900 overflow-auto h-full"
       >
         <div className="py-2 px-3">
           <div className="flex justify-between">
